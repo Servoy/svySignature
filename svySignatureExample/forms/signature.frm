@@ -28,7 +28,7 @@ onBegin:"505F562D-3734-442A-9ED2-40D3B45C69FE",
 onEnd:"D8C26BEF-3405-407F-AC73-34E1921ADAC1",
 styleClass:"sig"
 },
-name:"pad_339",
+name:"pad",
 typeName:"svysignature-pad",
 typeid:47,
 uuid:"530AE149-D685-4C5C-A3E9-0FBA61D46E93"
