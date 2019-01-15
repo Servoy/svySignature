@@ -1,5 +1,5 @@
 {
-    "name": "svySignature",
+    "name": "svysignature",
     "displayName": "svySignature",
     "packageType": "Web-Component",
     "icon": "https://raw.githubusercontent.com/Servoy/svySignature/master/icon.png",
