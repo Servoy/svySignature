@@ -1,0 +1,12 @@
+{
+    "name": "svySignature",
+    "displayName": "svySignature",
+    "packageType": "Web-Component",
+    "icon": "https://raw.githubusercontent.com/Servoy/svySignature/master/icon.png",
+    "description": "Signature component for Servoy",
+    "wikiUrl": "https://github.com/Servoy/svySignature/wiki",
+    "sourceUrl": "https://github.com/Servoy/svySignature",
+    "releases": [
+    	{"version": "1.0.0","url": "https://github.com/Servoy/svySignature/releases/download/v1.0.0/svySignature.zip","servoy-version":"8.2.0"}, 
+    ]
+}

@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: svysignature
+Bundle-Name: svysignature
+Bundle-Version: 1.0.0
+Package-Type: Web-Component
+
+Name: pad/pad.spec
+Web-Component: True
+
