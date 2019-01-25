@@ -53,6 +53,7 @@
 	{
 		"init": 
 		{
+		"delayUntilFormLoads": true,
 			"parameters": 
 			[
 				{
@@ -60,8 +61,6 @@
 					"type": "object"
 				}
 			],
-
-			"returns": "boolean"
 		},
 
 		"getDataUrl": 
