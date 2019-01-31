@@ -61,7 +61,18 @@ angular.module('svysignaturePad', ['servoy']).directive('svysignaturePad', funct
 				 * onBegin : (function) Callback when stroke begin.
 				 * onEnd : (function) Callback when stroke end.
 				 */
-				$scope.api.init = function(options) {
+				$scope.api.init = function() {
+					var options = {
+						dotSize : $scope.model.dotSize,
+						minWidth : $scope.model.minWidth,
+						maxWidth : $scope.model.maxWidth,
+						throttle : $scope.model.throttle,
+						minDistance : $scope.model.minDistance,
+						backgroundColor : $scope.model.backgroundColor,
+						penColor : $scope.model.penColor,
+						velocityFilterWeight : $scope.model.velocityFilterWeight
+					}					
+					
 					var element = document.getElementById($scope.model.svyMarkupId + '-wrapper');
 					var canvas = document.getElementById($scope.model.svyMarkupId);
 
@@ -88,6 +99,13 @@ angular.module('svysignaturePad', ['servoy']).directive('svysignaturePad', funct
 					resizeCanvas();
 
 				};
+				
+				setTimeout($scope.api.init, 500);
+				
+				//if the options are updated redraw the chart
+				$scope.$watchCollection('model', function(newValue, oldValue) {
+						$scope.api.init();
+					});
 			},
 			templateUrl: 'svysignature/pad/pad.html'
 		};

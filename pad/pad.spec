@@ -27,7 +27,16 @@
 			"values": 
 			[
 			]
-		}
+		},
+		
+		"dotSize" : {"type":"float"},
+		"minWidth" : {"type":"float"},
+		"maxWidth" : {"type":"float"},
+		"throttle" : {"type":"number"},
+		"minDistance" : {"type":"number"},
+		"backgroundColor" : {"type":"color"},
+		"penColor" : {"type":"color"},
+		"velocityFilterWeight" : {"type":"float"}
 	},
 
 	"handlers": 
@@ -50,19 +59,7 @@
 	},
 
 	"api": 
-	{
-		"init": 
-		{
-		"delayUntilFormLoads": true,
-			"parameters": 
-			[
-				{
-					"name": "options",
-					"type": "object"
-				}
-			],
-		},
-
+	{	
 		"getDataUrl": 
 		{
 			"parameters": 

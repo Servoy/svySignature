@@ -62,7 +62,6 @@ uuid:"EAC03D44-BEC3-4318-A4AC-4CA16D92E395"
 ],
 name:"signature",
 navigatorID:"-1",
-onShowMethodID:"DB4D2D22-8429-43A5-9C92-60634B1B95A2",
 showInMenu:true,
 size:"624,288",
 typeid:3,
