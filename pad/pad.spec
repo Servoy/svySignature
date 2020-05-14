@@ -2,6 +2,7 @@
 	"name": "svysignature-pad",
 	"displayName": "pad",
 	"version": 1,
+	"categoryName": "Media",
 	"definition": "svysignature/pad/pad.js",
 	"libraries": 
 	[
