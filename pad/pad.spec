@@ -1,8 +1,9 @@
 {
 	"name": "svysignature-pad",
-	"displayName": "pad",
+	"displayName": "Pad",
 	"version": 1,
 	"categoryName": "Media",
+	"icon": "svysignature/pad/icon.png",
 	"definition": "svysignature/pad/pad.js",
 	"libraries": 
 	[
