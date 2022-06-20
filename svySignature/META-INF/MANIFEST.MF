@@ -3,6 +3,9 @@ Bundle-SymbolicName: svysignature
 Bundle-Name: svysignature
 Bundle-Version: 1.0.1
 Package-Type: Web-Component
+NPM-PackageName: svysignature
+NG2-Module: svysignatureModule
+Entry-Point: dist
 
 Name: pad/pad.spec
 Web-Component: True
