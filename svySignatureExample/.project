@@ -3,7 +3,7 @@
 	<name>svySignatureExample</name>
 	<comment></comment>
 	<projects>
-		<project>svysignature</project>
+		<project>resources</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
