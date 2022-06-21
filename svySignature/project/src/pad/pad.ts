@@ -1,6 +1,6 @@
 import { Component, Input, SimpleChanges, Renderer2, ChangeDetectorRef, ChangeDetectionStrategy } from '@angular/core';
 import { ServoyBaseComponent } from '@servoy/public';
-import * as SignaturePad from './lib/signature_pad.min';
+import SignaturePad from './lib/signature_pad';
 
 @Component({
     selector: 'svysignature-pad',
@@ -79,7 +79,7 @@ export class Pad extends ServoyBaseComponent < HTMLDivElement > {
         this.svyOnInit();
     }
 
-    getDataUrl(type) {
+    getDataUrl(type: String) {
         var datatemp = this.signaturePad.toData();
         setTimeout(function() {
             this.signaturePad.fromData(datatemp);
@@ -89,7 +89,7 @@ export class Pad extends ServoyBaseComponent < HTMLDivElement > {
         return data;
     }
 
-    setDataUrl(data) {
+    setDataUrl(data: any) {
         return this.signaturePad.fromDataURL(data);
     }
 
