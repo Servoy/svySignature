@@ -34,8 +34,8 @@
 		"dotSize" : {"type":"float"},
 		"minWidth" : {"type":"float"},
 		"maxWidth" : {"type":"float"},
-		"throttle" : {"type":"number"},
-		"minDistance" : {"type":"number"},
+		"throttle" : {"type":"float"},
+		"minDistance" : {"type":"float"},
 		"backgroundColor" : {"type":"color"},
 		"penColor" : {"type":"color"},
 		"velocityFilterWeight" : {"type":"float"}
