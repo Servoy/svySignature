@@ -22,6 +22,7 @@
     "@angular/forms": "13.2.2",
     "@servoy/public": "2022.3.0",
     "rxjs": "7.5.4",
+    "signature_pad": "^4.0.5",
     "tslib": "2.3.1",
     "zone.js": "0.11.4"
   },
