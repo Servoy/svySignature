@@ -23,7 +23,7 @@ function onAction$clear(event, type) {
 function onAction$save(event) {
 	var data = elements.pad.getDataUrl("image/png")
 	application.output(data);
-	onAction$clear(event);
+	application.executeLater(onAction$clear,500)
 }
 
 /**
