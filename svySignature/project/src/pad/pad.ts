@@ -42,22 +42,26 @@ export class Pad extends ServoyBaseComponent < HTMLDivElement > {
             minDistance: this.minDistance,
             backgroundColor: this.backgroundColor,
             penColor: this.penColor,
-            velocityFilterWeight: this.velocityFilterWeight,
-            onBegin : null,
-            onEnd : null
+            velocityFilterWeight: this.velocityFilterWeight
         }
+
+
 
         this.element = document.getElementById(this.servoyApi.getMarkupId() + '-wrapper');
         this.canvas = document.getElementById(this.servoyApi.getMarkupId());
 
-        //add onBegin/onEnd Handlers
-        if (this.onBegin) {
-            this.options.onBegin = this.onBegin
+        if (this.signaturePad) {
+            this.signaturePad.off();
         }
-        if (this.onEnd) {
-            this.options.onEnd = this.onEnd
-        }
+     
         this.signaturePad = new SignaturePad(this.canvas, this.options);
+        
+         //add onBegin/onEnd Handlers
+        if (this.onBegin)
+            this.signaturePad.addEventListener("beginStroke", this.onBegin);
+
+        if (this.onEnd)
+            this.signaturePad.addEventListener("endStroke", this.onEnd);
 
         function resizeCanvas() {
             var data = this.signaturePad.toData()
@@ -68,9 +72,9 @@ export class Pad extends ServoyBaseComponent < HTMLDivElement > {
             this.signaturePad.clear(); // otherwise isEmpty() might return incorrect value
             this.signaturePad.fromData(data);
         }
-
+ 
         window.addEventListener("resize", resizeCanvas.bind(this));
-        resizeCanvas.call(this);        
+        resizeCanvas.call(this);
 
     }
 
