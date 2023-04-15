@@ -75,6 +75,10 @@ angular.module('svysignaturePad', ['servoy']).directive('svysignaturePad', funct
 					
 					var element = document.getElementById($scope.model.svyMarkupId + '-wrapper');
 					var canvas = document.getElementById($scope.model.svyMarkupId);
+					
+					 if ($scope.signaturePad) {
+						 $scope.signaturePad.off(); 
+					 }
 
 					//add onBegin/onEnd Handlers
 					if ($scope.handlers.onBegin) {
