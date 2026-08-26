@@ -1,21 +1,12 @@
-import { Pad } from './pad/pad';
 import { NgModule } from '@angular/core';
-import { ServoyPublicModule } from '@servoy/public';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { Pad } from './pad/pad';
 
 @NgModule({
-    declarations: [
-		Pad,
-    ],
-    providers: [],
     imports: [
-      ServoyPublicModule,
-      CommonModule,
-      FormsModule
+        Pad,
     ],
     exports: [
-		Pad, 
-      ]
+        Pad,
+    ]
 })
 export class svysignatureModule {}

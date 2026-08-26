@@ -1,10 +1,10 @@
 Manifest-Version: 1.0
 Bundle-SymbolicName: svysignature
 Bundle-Name: svysignature
-Bundle-Version: 2202.6.1
+Bundle-Version: 2026.9.0
 Package-Type: Web-Component
 NPM-PackageName: svysignature
-NG2-Module: svysignatureModule
+NG2-Components: Pad
 Entry-Point: dist
 
 Name: pad/pad.spec

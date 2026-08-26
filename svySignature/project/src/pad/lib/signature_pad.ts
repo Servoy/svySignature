@@ -1,3 +1,5 @@
+// @ts-nocheck
+/* eslint-disable */
 /*!
  * Signature Pad v4.0.5 | https://github.com/szimek/signature_pad
  * (c) 2022 Szymon Nowak | Released under the MIT license

@@ -1,0 +1,9 @@
+.opencode/index/
+
+# Angular / npm build artifacts
+node_modules/
+dist/
+.angular/
+out-tsc/
+coverage/
+target/
