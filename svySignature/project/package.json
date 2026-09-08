@@ -1,13 +1,8 @@
 {
   "name": "svysignature",
-  "version": "1.0.0",
-  "peerDependencies": {
-    "@angular/animations": "^13",
-    "@angular/common": "^13",
-    "@angular/core": "^13",
-    "@angular/forms": "^13"
-  },
+  "version": "2026.9.0",
   "dependencies": {
+    "signature_pad": "^5.1.4",
     "tslib": "*"
   },
   "license": "MIT",
